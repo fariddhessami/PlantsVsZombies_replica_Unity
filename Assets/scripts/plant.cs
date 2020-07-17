@@ -29,5 +29,9 @@ public abstract class plant : MonoBehaviour {
     {
 	    return hp;
     }
-    
+
+    public plant(int hp)
+    {
+	    this.hp = hp;
+    }
 }
