@@ -9,6 +9,14 @@ public abstract class plant : MonoBehaviour {
     protected float timer;
     public GameObject smoke;
 
+
+    [SerializeField] private bool die_flag = false;
+
+    public bool getDieFlag()
+    {
+	    return die_flag;
+    }
+
 	void Start () {
 		
 	}
@@ -23,6 +31,14 @@ public abstract class plant : MonoBehaviour {
             Instantiate(smoke, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
+    }
+    
+    public void updateHp_with_Substitude(int amount) {
+	    hp += amount;
+	    if (hp <= 0)
+	    {
+		    die_flag = true;
+	    }
     }
 
     public int getHp()
