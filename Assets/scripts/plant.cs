@@ -24,4 +24,10 @@ public abstract class plant : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+    public int getHp()
+    {
+	    return hp;
+    }
+    
 }

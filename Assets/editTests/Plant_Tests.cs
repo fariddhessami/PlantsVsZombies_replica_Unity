@@ -12,6 +12,11 @@ public class Plant_Tests : MonoBehaviour
     {
         //    ACT
         
+        plant plant_a = new shooter();
+        Assert.AreEqual(1, plant_a.getHp());
+        
+        plant_a.updateHp(12);
+        
         //    ASSERT
 
         Assert.AreEqual(1, 1);
