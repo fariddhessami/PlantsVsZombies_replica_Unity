@@ -28,4 +28,8 @@ public class shooter : plant {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 6f, 1 << 8);
         return hit;
     }
+
+    public shooter(int hp) : base(hp)
+    {
+    }
 }
