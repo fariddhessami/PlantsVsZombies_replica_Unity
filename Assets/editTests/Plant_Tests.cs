@@ -27,7 +27,7 @@ public class Plant_Tests : MonoBehaviour
     public void updateHp_test()
     {
         //    ACT
-        plant plant_a = new shooter(3);
+        plant plant_a = new shooter();
         Assert.AreEqual(1, plant_a.getHp());
         
         plant_a.updateHp(12);

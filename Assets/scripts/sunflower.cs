@@ -28,8 +28,4 @@ public class sunflower : plant {
         );
         sun.GetComponent<sun>().sunflowerMade = true;
     }
-
-    public sunflower(int hp) : base(hp)
-    {
-    }
 }
