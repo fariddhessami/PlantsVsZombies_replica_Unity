@@ -26,8 +26,12 @@ public abstract class plant : MonoBehaviour {
     }
 
     public int getHp()
-    {
-	    return hp;
-    }
+     {
+        return hp;
+     }
     
+    public void setHp(int hp)
+    {
+	    this.hp = hp;
+    }
 }
